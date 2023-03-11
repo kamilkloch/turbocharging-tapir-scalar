@@ -1,0 +1,89 @@
+% https://swirly.dev/
+
+[styles]
+event_radius = 20
+arrow_stroke_color = white
+background_color = rgb(7, 0, 33)
+barrier_color = rgba(255, 255, 255, 0.5)
+completion_stroke_color = white
+error_color= white
+event_fill_color = auto_dark
+event_stroke_color=  white
+event_value_color = white
+operator_fill_color = black
+operator_stroke_color = white
+operator_title_color = white
+range_fill_color = rgba(159, 159, 159, 0.25)
+range_stroke_color = white
+stream_title_color =  white
+
+
+[styles.c]
+fill_color = rgb(229, 26, 66)
+
+[styles.h]
+fill_color = rgb(229, 26, 66)
+value_font_weight = bold
+stroke_width = 5
+
+[styles.d]
+fill_color = rgb(255, 215, 0)
+value_color = black
+
+[styles.e]
+fill_color = rgb(55, 115, 0)
+
+[styles.A]
+fill_color = rgb(7, 0, 33)
+stroke_color = rgba(0, 0, 0, 0)
+
+[styles.B]
+fill_color = rgb(7, 0, 33)
+stroke_color = rgba(0, 0, 0, 0)
+
+[styles.C]
+fill_color = rgb(7, 0, 33)
+stroke_color = rgba(0, 0, 0, 0)
+
+[styles.D]
+fill_color = rgb(7, 0, 33)
+stroke_color = rgba(0, 0, 0, 0)
+
+[styles.E]
+fill_color = rgb(7, 0, 33)
+stroke_color = rgba(0, 0, 0, 0)
+
+--a----b----------cde--f------|
+title = server
+a := 10
+b := 20
+c := 51
+d := 52
+e := 53
+f := 60
+
+--a----b----------------cde-f-|
+title = client
+a := 10
+b := 20
+c := 62
+d := 63
+e := 64
+f := 67
+
+-------A----------------BCD-E-|
+title = Gatling
+A := 10
+B := 42
+C := 1
+D := 1
+E := 3
+
+--A----A----------------BBB-C-|
+title = Hdr Hist
+A := 0
+B := 11
+C := 7
+D := 6
+E := 1
+

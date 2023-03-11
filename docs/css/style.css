@@ -1,0 +1,328 @@
+/*@import './droid-serif/droid-serif.css';*/
+@import url(https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic);
+@import './yanone-kaffeesatz/yanone-kaffeesatz.css'; /*@import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);*/
+@import './jetbrains-mono/jetbrains-mono.css';       /*@import url(https://fonts.googleapis.com/css?family=JetBrains+Mono:400,700,400italic);*/
+@import './inter/inter.css';
+
+body {
+  font:           400 16px/1.5 'Inter';
+  margin:         0;
+  padding:        0;
+  border:         0;
+  vertical-align: baseline;
+  background: #031b29;
+  /*background: #001b3d;*/
+  color: #f3f3f3;
+}
+
+h1, h2, h3, h4 {
+  color: #f6cae7;
+  font-weight: 600;
+  margin-block-start: 0.3em;
+  margin-block-end: 0.3em;
+}
+
+h2 {
+    border-bottom: 1px solid #f6cae7;
+}
+
+.remark-slide-content h2 {
+    font-size: 2em;
+}
+
+.remark-slide-content h3 {
+    font-size: 1.5em;
+}
+
+.remark-code {
+    border-radius: 5px;
+    border:        1px solid #ffffff10;
+    white-space:   pre-wrap;       /* CSS 3 */
+    white-space:   -moz-pre-wrap;  /* Mozilla, since 1999 */
+    white-space:   -pre-wrap;      /* Opera 4-6 */
+    white-space:   -o-pre-wrap;    /* Opera 7 */
+    word-wrap:     break-word;       /* Internet Explorer 5.5+ */
+}
+
+.remark-slide-content {
+    padding: 0em;
+}
+
+.remark-slide-content, .remark-slide-container {
+    background: #031b29;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: contain;      /* applied using JavaScript only if background-image is larger than slide */
+}
+
+.remark-slide-scaler {
+    box-shadow: none;
+}
+/*.remark-slide-content h1 { font-size: 3em; }
+.remark-slide-content h2 { font-size: 2em; }
+.remark-slide-content h3 { font-size: 1.6em; }*/
+.footnote-center {
+  position: absolute;
+  bottom: 1em;
+  text-align: center;
+  width: 100%;
+}
+
+.footnote-center-8em {
+  position: absolute;
+  bottom: 7.5em;
+  text-align: center;
+  width: 100%;
+}
+
+.absolute-20em {
+  position: absolute;
+  top: 20em;
+  width: 100%;
+}
+
+li p { line-height: 1.25em; }
+.red { color: #fa0000; }
+.green { color: #00fa00; }
+.orange { color: #ffc600 }
+.small { font-size: 0.8em; }
+.larger { font-size: 1.5em; }
+.large { font-size: 2em; }
+.xlarge {
+    font-size: 3em;
+    vertical-align: middle;
+}
+.xxlarge {
+    font-size: 5em;
+    vertical-align: middle;
+}
+
+a, a > code {
+  white-space: nowrap;
+  color: #f6cae7;
+  text-decoration: none;
+}
+
+.remark-code, .remark-inline-code { font-family: 'JetBrains Mono'; }
+.remark-inline-code {
+    border-radius: 5px;
+    font-size:     0.9em;
+    background: #757159;
+    /*border:        1px solid #938e71;
+    padding:       2px 5px 2px 5px;*/
+}
+.remark-code-line-highlighted  { background-color: #595223; }
+.remark-code-span-highlighted { background-color: #595223; }
+
+.pull-left-35 {
+  float: left;
+  width: 35%;
+}
+
+.pull-left-30 {
+  float: left;
+  width: 30%;
+}
+
+.pull-left-60 {
+  float: left;
+  width: 60%;
+}
+
+.pull-left-75 {
+  float: left;
+  width: 70%;
+}
+
+.pull-right {
+  float: right;
+  width: 47%;
+}
+
+.pull-right-65 {
+  float: right;
+  width: 65%;
+}
+
+.pull-right-70 {
+  float: right;
+  width: 70%;
+}
+
+.pull-clear {
+  clear:both;
+}
+
+.pull-right ~ p {
+  clear: both;
+}
+#slideshow .slide .content code {
+  font-size: 0.8em;
+}
+#slideshow .slide .content pre code {
+  font-size: 0.9em;
+  padding: 15px;
+}
+
+/* Slide-specific styling */
+/*#slide-inverse .footnote {
+  bottom: 12px;
+  left: 20px;
+}*/
+
+#slide-how .slides {
+  font-size: 0.9em;
+  position: absolute;
+  top:  151px;
+  right: 140px;
+}
+#slide-how .slides h3 {
+  margin-top: 0.2em;
+}
+#slide-how .slides .first, #slide-how .slides .second {
+  padding: 1px 20px;
+  height: 90px;
+  width: 120px;
+  -moz-box-shadow: 0 0 10px #777;
+  -webkit-box-shadow: 0 0 10px #777;
+  box-shadow: 0 0 10px #777;
+}
+#slide-how .slides .first {
+  background: #fff;
+  position: absolute;
+  top: 20%;
+  left: 20%;
+  z-index: 1;
+}
+#slide-how .slides .second {
+  position: relative;
+  background: #fff;
+  z-index: 0;
+}
+
+/* Two-column layout */
+.left-column {
+  width: 49%;
+  float: left;
+}
+  .left-column h2:last-of-type, .left-column h3:last-child {
+    color: #000;
+  }
+.right-column {
+  width: 49%;
+  float: right;
+}
+
+/* Comments tend to be huge - stack traces and compiler errors. This makes them more readable. */
+.hljs-comment {
+    font-size: .85em;
+}
+
+.hljs-tomorrow-night-blue .hljs {
+    background: #070021;
+}
+
+.section {
+    font-weight: bold;
+    color: #f6cae7;
+}
+
+.section::after {
+    content: ":";
+}
+
+.super {
+    vertical-align: super;
+    font-size:      .5em;
+}
+
+p, ul {
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+}
+
+.code-red .remark-code-span-highlighted {
+    background-color: #fa0000;
+}
+
+.code-red .remark-code-line-highlighted {
+    background-color: #fa0000;
+    position: relative;
+}
+
+.diff-rm .remark-code-span-highlighted {
+    background-color: #b80202;
+}
+
+.diff-rm .remark-code-line-highlighted {
+    background-color: #b80202;
+    position: relative;
+}
+
+.diff-add .remark-code-span-highlighted {
+    background-color: #048128fc;
+    padding: 1px 0px 2px 0px;
+}
+
+.diff-add .remark-code-line-highlighted {
+    background-color: #048128fc;
+    position: relative;
+}
+
+.hljs-tomorrow-night-blue .hljs-comment, .hljs-tomorrow-night-blue .hljs-quote {
+    color: #83dfdc;
+}
+
+.table {
+    vertical-align: bottom;
+}
+
+.smaller .remark-code {
+    font-size: 0.85em;
+}
+
+.tiny .remark-code {
+    font-size: 0.4em;
+}
+
+.large .remark-code {
+    font-size: 0.6em;
+}
+
+.smaller-bottom-margin pre {
+    margin-bottom: 0.1em;
+}
+
+.smaller-top-margin pre {
+    margin-top: 0.1em;
+}
+
+
+.remark-slide-number {
+    display: none;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.font-large {
+    font-size: 1.5em;
+}
+
+.dimmed {
+    opacity: 0.4;
+}
+
+.shadow {
+ text-shadow:
+    5px 5px 2px rgba(0, 0, 0, 0.5),
+    -5px 5px 2px rgba(0, 0, 0, 0.5),
+    -5px -5px 0 rgba(0, 0, 0, 0.5),
+    5px -5px 0 rgba(0, 0, 0, 0.5);
+}
+
+.bold {
+  font-weight: bold;
+}
+
